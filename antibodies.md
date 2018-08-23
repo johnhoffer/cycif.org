@@ -1,5 +1,5 @@
 ---
-title: Antibody
+title: Antibodies
 ---
 
 ## Antibodies for tissue-based CyCIF

@@ -11,12 +11,20 @@
       <ul class="navbar-nav mr-auto">
         {% for item in site.data.nav-links %}
         <li class="nav-item">
-          <a href="{{ item.url | relative_url }}" class="nav-link {% if page.url == item.url %} active {% endif %}">
+          <a href="{{ item.url | relative_url }}" class="nav-link {% if page.url == item.url %} active {% endif %}" style="font-size: 1rem">
             {{ item.label }}
           </a>
         </li>
         {% endfor %}
       </ul>
+          <div class="flex-row ml-md-auto">
+  
+            <a href="{{site.baseurl}}/osd-exhibit" class="btn btn-outline-light font-weight-bold" style="font-size: 1rem; background: url({{ site.baseurl }}/assets/img/explore_button.jpg) center; background-size: cover;">
+              <span class="text-white">
+                  Explore CyCIF
+              </span> 
+            </a>
+          </div> 
     </div>
   </div>
 </nav>
