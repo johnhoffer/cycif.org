@@ -1,22 +1,6 @@
 Exhibit:
   Name: t-CyCIF for tissue sections from patients with metastatic melanoma
   Images:
-    - Name: m0
-      Provider: minerva
-      Path: 'https://5yatimj9u4.execute-api.us-east-1.amazonaws.com/dev/image/a7db6f10-8a27-4c40-9cab-bc30c6abfb59'
-      Width: 1280
-      Height: 1080
-      MaxLevel: 1
-      TileSize: [1024, 1024]
-      Description: 'Minerva Grid'
-    - Name: m1
-      Provider: minerva
-      Path: 'https://5yatimj9u4.execute-api.us-east-1.amazonaws.com/dev/image/32f26fef-cb3a-4499-a445-769c529e896e'
-      Width: 1280
-      Height: 1080
-      MaxLevel: 1
-      TileSize: [1024, 1024]
-      Description: 'Minerva Tumor'
     - Name: i0
       Description: '# 36844, pre-treatment'
       Path: https://s3.amazonaws.com/pca2018/26531PRE
@@ -71,15 +55,6 @@ Exhibit:
       - [i2, i3]
       - [i4, i5]
       - [i6, i7]
-  Channels:
-    - Name: Grid 0 
-      Images: [m0]
-      Range: [.01, .07]
-      Index: 0
-    - Name: Tumor 0 
-      Images: [m1]
-      Range: [0, 1]
-      Index: 0
   Groups:
     - Path: S100-CD45RO-SMA
       Name: Tumor Architecture

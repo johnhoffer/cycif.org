@@ -20,15 +20,11 @@
   {% assign config_figure = config_paper[page.figure] %}
   {% assign exhibit = config_figure.Exhibit %}
 
-    <header class="m-0">
-        {% include nav.html %}
-    </header>
-
     <div id="content" class="position-fixed w-100" style="top: 0;left: 0;">
         <div>
             <div id="openseadragon1" class="openseadragon"></div>
             <div id="legend" class="position-absolute"
-                 style="pointer-events: none; top: 4rem; right: 8px">
+                 style="pointer-events: none; top: 1rem; right: 8px">
                 <div>
                     <div class="btn-group-vertical bg-trans p-2"
                          style="display:inline-block; vertical-align:top;">
@@ -63,7 +59,7 @@
                             </div>
                             <div class="col-2">
                                 <a class="btn text-light d-none" id="home-button"
-                                    href="/data">
+                                   href="/">
                                     <i class="fas fa-home"></i>
                                 </a>
                                 <a class="btn text-light d-none" id="toc-button">
