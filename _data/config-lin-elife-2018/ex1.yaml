@@ -3,7 +3,7 @@ Exhibit:
   Images:
     - Name: m0
       Provider: minerva
-      Path: 'https://5yatimj9u4.execute-api.us-east-1.amazonaws.com/dev/image/a7db6f10-8a27-4c40-9cab-bc30c6abfb59'
+      Path: 'https://8i7q09uti0.execute-api.us-east-1.amazonaws.com/dev/image/a7db6f10-8a27-4c40-9cab-bc30c6abfb59'
       Width: 1280
       Height: 1080
       MaxLevel: 1
@@ -11,7 +11,7 @@ Exhibit:
       Description: 'Minerva Grid'
     - Name: m1
       Provider: minerva
-      Path: 'https://5yatimj9u4.execute-api.us-east-1.amazonaws.com/dev/image/32f26fef-cb3a-4499-a445-769c529e896e'
+      Path: 'https://8i7q09uti0.execute-api.us-east-1.amazonaws.com/dev/image/32f26fef-cb3a-4499-a445-769c529e896e'
       Width: 1280
       Height: 1080
       MaxLevel: 1
@@ -67,10 +67,7 @@ Exhibit:
       MaxLevel: 6
   Layout:
     Grid:
-      - [i0, i1]
-      - [i2, i3]
-      - [i4, i5]
-      - [i6, i7]
+      - [m0, m1]
   Channels:
     - Name: Grid 0 
       Images: [m0]
