@@ -845,7 +845,7 @@ HashState.prototype = {
    */
 
   get token() {
-    const username = 'johnhoffer@hotmail.com';
+    const username = 'john@hoff.in';
     const password = document.minerva_password;
     const pass = new Promise(function(resolve, reject) {
       if (password != undefined) {
@@ -1254,7 +1254,7 @@ HashState.prototype = {
   newExhibit: function() {
     const exhibit = this.exhibit;
     const cgs = exhibit.Groups || [];
-    const masks = exhibit.Masks || [{}];
+    const masks = exhibit.Masks || [];
     var stories = exhibit.Stories || [];
     stories = stories.map(story => {
       story.Waypoints = story.Waypoints.map(waypoint => {
