@@ -3,31 +3,19 @@ Exhibit:
   Images:
     - Name: m0
       Provider: minerva
-      Path: 'https://8i7q09uti0.execute-api.us-east-1.amazonaws.com/dev/image/0ace1e24-9ec9-4341-bac2-385bf078384f'
+      Path: 'https://8i7q09uti0.execute-api.us-east-1.amazonaws.com/dev/image/afd6f4bd-67de-4df2-b518-0e9b05a49012'
       Width: 1280
       Height: 1080
       MaxLevel: 1
       TileSize: [1024, 1024]
       Description: 'Minerva Grid'
-    - Name: m1
-      Provider: minerva
-      Path: 'https://8i7q09uti0.execute-api.us-east-1.amazonaws.com/dev/image/0ace1e24-9ec9-4341-bac2-385bf078384f'
-      Width: 1280
-      Height: 1080
-      MaxLevel: 1
-      TileSize: [1024, 1024]
-      Description: 'Minerva Tumor'
   Layout:
     Grid:
-      - [m0, m0]
+      - [m0]
   Channels:
     - Name: Grid 0 
       Images: [m0]
       Range: [.01, .07]
-      Index: 0
-    - Name: Tumor 0 
-      Images: [m1]
-      Range: [0, 1]
       Index: 0
   Groups:
     - Name: Group 0
@@ -35,6 +23,7 @@ Exhibit:
         - 00FF00 
       Channels:
         - Grid 0
+      Path: a
   Stories:
   - Name: Overview
     Description:
