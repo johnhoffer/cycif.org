@@ -848,7 +848,9 @@ HashState.prototype = {
     const username = 'john@hoff.in';
     const password = document.minerva_password;
     const pass = new Promise(function(resolve, reject) {
-      if (password != undefined) {
+      resolve('MEETING@lsp2')
+
+     /* if (password != undefined) {
         resolve(password);
       }
       const selector = '#password_modal';
@@ -864,6 +866,7 @@ HashState.prototype = {
         resolve(p);
         return false;
       });
+      */
     });
     return authenticate(username, pass);
   },

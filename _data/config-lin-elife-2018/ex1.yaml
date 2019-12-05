@@ -3,7 +3,15 @@ Exhibit:
   Images:
     - Name: m0
       Provider: minerva
-      Path: 'https://8i7q09uti0.execute-api.us-east-1.amazonaws.com/dev/image/afd6f4bd-67de-4df2-b518-0e9b05a49012'
+      Path: 'https://yfo3vr9rw4.execute-api.us-east-1.amazonaws.com/dev/image/afd6f4bd-67de-4df2-b518-0e9b05a49012'
+      Width: 1280
+      Height: 1080
+      MaxLevel: 1
+      TileSize: [1024, 1024]
+      Description: 'Minerva Grid'
+    - Name: m1
+      Provider: minerva
+      Path: 'https://yfo3vr9rw4.execute-api.us-east-1.amazonaws.com/dev/image/afd6f4bd-67de-4df2-b518-0e9b05a49012'
       Width: 1280
       Height: 1080
       MaxLevel: 1
@@ -12,17 +20,24 @@ Exhibit:
   Layout:
     Grid:
       - [m0]
+      - [m1]
   Channels:
     - Name: Grid 0 
       Images: [m0]
+      Range: [.01, .07]
+      Index: 0
+    - Name: Grid 1 
+      Images: [m1]
       Range: [.01, .07]
       Index: 0
   Groups:
     - Name: Group 0
       Colors:
         - 00FF00 
+        - 00FFFF 
       Channels:
         - Grid 0
+        - Grid 1
       Path: a
   Stories:
   - Name: Overview
