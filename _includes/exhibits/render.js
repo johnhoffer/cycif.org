@@ -316,11 +316,11 @@ Render.prototype = {
     $('.arrow-switch').click(this, function(e) {
       const HS = e.data.hashstate;
       const THIS = e.data;
-      HS.drawType = "arrow";
-      if (HS.drawing) {
+      if (HS.drawing && HS.drawType === "arrow") {
         HS.cancelDrawing(HS);
       }
       else {
+        HS.drawType = "arrow";
         HS.startDrawing(HS);
       }
       HS.pushState();
@@ -330,11 +330,11 @@ Render.prototype = {
     $('.lasso-switch').click(this, function(e) {
       const HS = e.data.hashstate;
       const THIS = e.data;
-      HS.drawType = "lasso";
-      if (HS.drawing) {
+      if (HS.drawing && HS.drawType === "lasso") {
         HS.cancelDrawing(HS);
       }
       else {
+        HS.drawType = "lasso";
         HS.startDrawing(HS);
       }
       HS.pushState();
@@ -344,11 +344,11 @@ Render.prototype = {
     $('.draw-switch').click(this, function(e) {
       const HS = e.data.hashstate;
       const THIS = e.data;
-      HS.drawType = "box";
-      if (HS.drawing) {
+      if (HS.drawing && HS.drawType === "box") {
         HS.cancelDrawing(HS);
       }
       else {
+        HS.drawType = "box";
         HS.startDrawing(HS);
       }
       HS.pushState();
