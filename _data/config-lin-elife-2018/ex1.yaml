@@ -3,10 +3,10 @@ Exhibit:
   Images:
     - Name: m0
       Provider: minerva
-      Path: 'https://yfo3vr9rw4.execute-api.us-east-1.amazonaws.com/dev/image/afd6f4bd-67de-4df2-b518-0e9b05a49012'
-      Width: 1280
-      Height: 1080
-      MaxLevel: 1
+      Path: 'https://3v21j4dh1d.execute-api.us-east-1.amazonaws.com/dev/image/0c18ba28-872c-4d83-9904-ecb8b12b514d'
+      Width: 2560
+      Height: 2160
+      MaxLevel: 2
       TileSize: [1024, 1024]
       Description: 'Minerva Grid'
   Layout:

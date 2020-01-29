@@ -21,8 +21,8 @@ const authenticate = function(username, pass) {
 
   return pass.then(function(password) {
 
-    const minervaPoolId = 'us-east-1_YuTF9ST4J'; 
-    const minervaClientId = '6ctsnjjglmtna2q5fgtrjug47k';
+    const minervaPoolId = 'us-east-1_d3Wusx6qp';
+    const minervaClientId = 'cvuuuuogh6nmqm8491iiu1lh5';
     const minervaPool = new CognitoUserPool({
       UserPoolId : minervaPoolId,
       ClientId : minervaClientId
@@ -288,7 +288,7 @@ HashState.prototype = {
    */
 
   get token() {
-    const username = 'john@hoff.in'
+    const username = 'john_hoffer@hms.harvard.edu'
     const password = document.minerva_password;
     const pass = new Promise(function(resolve, reject) {
 
